@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+    font-style: italic;
+    line-height: 30px;
+}
+h1{
+    font-size: 80px;
+    line-height: 106px;
+    font-weight: bold;
+    color: #fff;
+}
+h2{
+    font-size: 64px;
+    line-height: 84px;
+    font-weight: bold;
+}
+h3{
+    font-size: 24px;
+    line-height: 42px;
+    color: #fff;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.mt-1{
+    margin-top: 8px;
+}
+.mr-2{
+    margin-right: 16px;
+}
+.mb-2{
+    margin-bottom: 16px;
+}
+.mr-3{
+    margin-right: 24px;
+}
+.mb-4{
+    margin-bottom: 32px;
+}
+.mb-5{
+    margin-bottom: 40px;
+}
+.mb-6{
+    margin-bottom: 48px;
+}
+.mt-7{
+    margin-top: 56px;
+}
+
+.pr-3{
+    padding-right: 24px;
+}
+.pt-7{
+    padding-top: 56px;
+}
+.pt-8{
+    padding-top: 64px;
+}
+.pb-8{
+    padding-bottom: 64px;
+}
+.d-f{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+    
+}
+.fw-w{
+    flex-wrap: wrap;
+}
+.aic{
+    align-items: center;
+}
+.jcc{
+    justify-content: center;
+}
+/*banner*/
+.banner{
+    height: 958px;
+    background: url(/image/banner.png) center ;
+    background-size: cover;
+    display: flex;
+}
+
+.title{
+    padding-top: 308px;
+    
+}
+.title h3{
+   font-weight: bold;
+}
+.title p{
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+    font-weight: bold;
+}
+.link a:hover{
+    opacity: 0.5;
+}
+/*About*/
+.about{
+    text-align: center;
+    width: 500px; /*這樣設定可以讓education文字內容斷句相符*/
+}
+/*第一段ul*/
+.profile{
+    text-align: center;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 28px;
+}
+.education{
+    line-height: 36px;
+}
+/*第二段ul*/
+.workExperience{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+}
+.workExperience li{
+    margin-bottom: 28px;
+}
+.workExperience li::before {content: "●"; color: #891818 ;padding-right: 16px;;font-size: 42px;}
+/*Brand*/
+.myBrand{
+    height: 1406px;
+    background-color: black;
+    text-align: center;
+}
+.myBrand h2{
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+.myBrand p{
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 68px;
+}
+/*三張照片*/
+.brand-1{
+    height: 416px;
+    width: 792px;
+}
+.brand-2.brand-3{
+    display: block;
+    height: 416px;
+    width: 588px;
+}
+.works{
+    text-align: center;
+}
+/*想問這裡的ul當我設定display:flex時就無法吃到container的設定原因*/
+.project{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*照片寬度設定*/
+.work-33{
+    width: 33%;
+}
+.work-50{
+    width: 50%;
+}
+/*footer*/
+.footer{
+    background: #000;
+}
+.contact{
+    text-align: center;
+}
+.contact h2{
+    color: #fff;   
+}
+.contact ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact ul>li>a:hover{
+    opacity: 0.5;
+}
