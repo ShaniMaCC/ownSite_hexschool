@@ -135,7 +135,7 @@ h3{
 /*banner*/
 .banner{
     height: 958px;
-    background: url(https://hexschool.github.io/webLayoutTraining1st/week2/banner.png) center ;
+    background: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png") center ;
     background-size: cover;
     display: flex;
 }
