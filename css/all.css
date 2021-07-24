@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+    line-height: 1.5;
 }
 ol, ul {
     list-style: none;
@@ -49,6 +49,7 @@ table {
 img {
     max-width: 100%;
     height: auto;
+    
 }
 *,*::before,*::after {
     box-sizing: border-box;
@@ -56,7 +57,6 @@ img {
 body{
     font-family: "Roboto";
     font-style: italic;
-    line-height: 30px;
 }
 h1{
     font-size: 80px;
@@ -138,20 +138,21 @@ h3{
     background: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png") center ;
     background-size: cover;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .title{
-    padding-top: 308px;
+    /* padding-top: 308px;   */
+    flex-direction: column;
+    color: #fff;
+    font-weight: bold;
     
 }
-.title h3{
-   font-weight: bold;
-}
-.title p{
+.title span, p{
     font-size: 24px;
-    color: #fff;
-    line-height: 36px;
-    font-weight: bold;
+    
 }
 .link a:hover{
     opacity: 0.5;
@@ -161,14 +162,17 @@ h3{
     text-align: center;
     width: 500px; /*這樣設定可以讓education文字內容斷句相符*/
 }
+
 /*第一段ul*/
 .profile{
     text-align: center;
     font-size: 24px;
     line-height: 42px;
     font-weight: bold;
-    padding-bottom: 24px;
-    border-bottom: 1px solid lightgray;
+    margin-bottom: 24px;
+}
+hr{
+    width: 384px;
     margin-bottom: 28px;
 }
 .education{
@@ -186,7 +190,6 @@ h3{
 .workExperience li::before {content: "●"; color: #891818 ;padding-right: 16px;;font-size: 42px;}
 /*Brand*/
 .myBrand{
-    height: 1406px;
     background-color: black;
     text-align: center;
 }
@@ -213,11 +216,7 @@ h3{
 .works{
     text-align: center;
 }
-/*想問這裡的ul當我設定display:flex時就無法吃到container的設定原因*/
-.project{
-    width: 1200px;
-    margin: 0 auto;
-}
+
 /*照片寬度設定*/
 .work-33{
     width: 33%;
@@ -238,6 +237,7 @@ h3{
 .contact ul>li>a{
     text-decoration: none;
     color: #fff;
+    font-size: 24px;
 }
 .contact ul>li>a:hover{
     opacity: 0.5;
